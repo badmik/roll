@@ -1,0 +1,48 @@
+:: this is a comment
+:: 
+
+::cd into Veracrypt folder install first
+
+@echo Backup gestartet
+
+cd c:\Program Files\VeraCrypt
+
+@echo Volumes werden getrennt
+
+:: dismount all Veracrypt volumes
+VeraCrypt /q /d 
+
+@echo Volumes werden gemountet
+
+::v1 ENTER password mount volume before chk volume and keyfile
+VeraCrypt /v f:\VeraCrypt\40PWD34 /l x: /q
+
+
+::V2 with password and silent mode mount volume before chk volume and keyfile
+::VeraCrypt /v f:\VeraCrypt\40PWD34 /l x: /q /s /p 34
+
+
+@echo "Starte Datensicherung"
+
+:: xcopy user data mke and chk folders
+@xcopy "c:\Users" "E:\BUP\UsersCS" /Q /s /e /i /y
+
+
+
+@echo "Volumes werden getrennt"
+:: dismount all Veracrypt volumes
+VeraCrypt /q /d 
+
+:: shutdown
+
+@echo off
+
+echo msgbox"Backup erfolgreich abgeschlossen! PC wird jetzt heruntergefahren",vbInformation , "Backup"> %temp%\msg.vbs 
+
+%Temp%\msg.vbs 
+
+erase %temp%\msg.vbs
+
+::shutdown -s -t 001
+
+
