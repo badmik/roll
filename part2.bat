@@ -18,7 +18,7 @@ start cmd.exe /k "gpupdate /force"
 ::start "" "ms-settings:smscfgrc"
 ::start "" "control.exe smscfgrc"
 ::start cmd.exe /k "control smscfgrc"
-echo "sccm"
+echo "sccm started"
 
 
 
@@ -26,7 +26,7 @@ echo "sccm"
 
 ::explorer shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
 control /name Microsoft.DevicesAndPrinter
-echo "printers"
+echo "printers started"
 
 
 
@@ -37,9 +37,53 @@ start "" "control"
 echo "control panel started"
 
 
+::word
+
+
+echo "word started"
+
+::OneDrive
+
+
+echo "OneDrive started"
+
+
+::chrome
+
+
+echo "chrome started"
+
+
+::Internet Explorer
+
+
+echo "Internet Explorer started"
 
 
 
+::gpupdate
+
+
+echo "gpupdate started"
+
+
+
+
+::kronos
+
+
+echo "kronos started"
+
+
+::user folder
+
+
+echo "user folder openend"
+
+::display settings
+
+
+echo "display settings started"
 
 
 ::control /name Microsoft.DevicesAndPrinter
