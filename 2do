@@ -1,0 +1,8 @@
+::finale make mb ready: updates, flash, fs, etc. userprofile
+::Win update
+wuauclt.exe /updatenow
+
+
+::Variablen: Userprofile
+
+::logging
