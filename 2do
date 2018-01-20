@@ -6,3 +6,56 @@ wuauclt.exe /updatenow
 ::Variablen: Userprofile
 
 ::logging
+
+
+
+::keyboard shortcuts
+
+
+Windows+I: Open Windows Settings.
+
+Windows+Tab: This opens the new Task View interface
+
+
+Windows + K
+	
+Connect to wireless displays and audio devices
+
+
+Windows + X
+	
+Open Start button context menu
+
+Windows + [1][2][3][…]
+	
+Open programs that are pinned to task bar
+E.g. if first pinned program on your task bar is Windows Explorer (from left to right), the shortcut Windows + 1 opens Windows Explorer for you.
+
+Windows + P
+	
+Project a screen
+
+Windows key + "-" key 	Zoom out using the magnifier.
+
+
+Windows logo key  + T 	Cycle through apps on the taskbar
+
+
+Windows logo key  + Shift + Up arrow 	Stretch the desktop window to the top and bottom of the screen
+
+
+
+Alt + D 	Select the address bar
+
+Ctrl + Shift + click a taskbar button 	Open an app as an administrator
+
+https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts
+
+::2do
+
+
+mke json:
+
+shortcuts
+dl mb web und ssd wipe
+küche
